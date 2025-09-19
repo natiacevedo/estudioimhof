@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --blanco: #fff;
+    --bordo: #350810; 
+    --negro: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; 
+}
+
+main{
+    background-image: url(img/textura.png);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .bitter{
+    font-family: "Bitter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4{
+    color: var(--bordo);
+}
+
+.italic{
+    font-weight: 400;
+    font-style: italic;
+    color: var(--bordo);
+}
+
+.smaller{
+    font-size: smaller;
+}
+
+p, .montserrat, a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cta{
+    color: var(--bordo);
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta:hover{
+    transform: scale(1.05);
+}
+
+
+/* Navbar */
+header {
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: var(--bordo);
+}
+
+.navbar-nav a {
+  color: var(--blanco);
+  font-size: 14px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 24px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:focus,
+.navbar-nav a.active {
+  color: var(--blanco) !important;
+}
+
+.nav-link {
+  position: relative;
+  padding-right: 18px;
+}
+
+/* Puntito a la izquierda */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+/* Hover, focus y activo muestran el puntito */
+.nav-link:hover::before,
+.nav-link:focus::before,
+.nav-link.active::before {
+  background: var(--blanco);
+}
+
+/* Hero */
+.hero {
+  background: url('img/hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--blanco);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.61);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 40px 0;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.hero img {
+  width: 28%;
+}
+
+.hero-text .saber-mas {
+  padding-bottom: 20px;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 60px 15%;
+}
+
+.about p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4a0f0f;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #6a1a1a;
+}
+
+/* Áreas */
+
+#areas {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #areas {
+    display: block;
+  }
+}
+
+.uno, .dos, .tres, .cuatro,
+.cinco, .seis, .siete, .ocho,
+.nueve, .diez {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Texto */
+.texto {
+  padding: 20px;
+  color: var(--blanco);
+  text-align: center;
+  max-width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+/* h4 centrado inicialmente */
+.texto h4 {
+  transition: transform 0.5s ease, margin-bottom 0.5s ease;
+  margin: 0;
+  color: var(--blanco);
+}
+
+/* p oculto inicialmente */
+.texto p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Cuando la card está activa */
+.uno.active, .dos.active, .tres.active, .cuatro.active,
+.cinco.active, .seis.active, .siete.active, .ocho.active,
+.nueve.active, .diez.active {
+  background-image: none;
+  background-color: var(--bordo);
+}
+
+/* h4 se sube */
+.uno.active .texto h4,
+.dos.active .texto h4,
+.tres.active .texto h4,
+.cuatro.active .texto h4,
+.cinco.active .texto h4,
+.seis.active .texto h4,
+.siete.active .texto h4,
+.ocho.active .texto h4,
+.nueve.active .texto h4,
+.diez.active .texto h4 {
+  transform: translateY(-10px);
+}
+
+/* p aparece */
+.uno.active .texto p,
+.dos.active .texto p,
+.tres.active .texto p,
+.cuatro.active .texto p,
+.cinco.active .texto p,
+.seis.active .texto p,
+.siete.active .texto p,
+.ocho.active .texto p,
+.nueve.active .texto p,
+.diez.active .texto p {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
+}
+
+.uno, .unod{
+  background-image: url(img/agronegocios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.dos, .dosd{
+  background-image: url(img/bancario.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tres, .tresd{
+  background-image: url(img/corporativo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cuatro, .cuatrod{
+  background-image: url(img/consumo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cinco, .cincod{
+  background-image: url(img/familia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.seis, .seisd{
+  background-image: url(img/laboral.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.siete, .sieted{
+  background-image: url(img/civil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ocho, .ochod{
+  background-image: url(img/fusiones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nueve, .nueved{
+  background-image: url(img/contencioso.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.diez, .diezd{
+  background-image: url(img/notarial.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Áreas Desktop */
+.carousel-section {
+  position: relative;
+  margin: 60px 30px;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 20px 10px;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+#home .card {
+  flex: 0 0 400px; /* ancho fijo */
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--blanco);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  /* 🔽 centrado vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bordo);
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+}
+
+.carousel-button i {
+  font-size: 20px;
+  color: var(--bordo);
+}
+
+.carousel-button.prev {
+  left: -15px;
+}
+.carousel-button.next {
+  right: -15px;
+}
+
+.carousel-track {
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.carousel-track.dragging {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+@media (max-width: 768px) {
+  .carousel-section {
+    display: none;
+  }
+}
+
+/* Contacto */
+form {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--bordo);
+}
+
+button.btn {
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: opacity 0.3s ease;
+}
+
+button.btn:hover {
+    opacity: 0.8;
+    color: var(--blanco);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--bordo);
+  color: var(--blanco);
+}
+
+footer .footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+    .navbar{
+        background-color: var(--bordo);
+    }
+    
+    .navbar-nav{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .navbar-toggler, .navbar-toggler:focus {
+        border: none;
+    }
+
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .hero img{
+        width: 80%;
+    }
+
+    .about {
+        padding: 60px 40px;
+    }
+
+    footer .footer-row {
+    display: block;
+    text-align: center;
+    }
+
+    footer .footer-row .text-left {
+        margin-top: 1rem;
+    }
+}
+
+/* Equipo */
+
+#equipo{
+    background-color: var(--bordo);
+}
+
+.equipo-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipo-text p{
+    width: 70%;
+}
+
+.card{
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .equipo-text p{
+        width: 100%;
+    }
+}
+
+/* Trabaja con nosotoros */
+
+input[type="file"] {
+  border: none;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: var(--blanco);
+  color: var(--bordo);
+  border: 1px var(--bordo) solid;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: rgb(198, 198, 198);
+}
+
+.form-row input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/* Animación */
+
+/* Estado inicial */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+/* Estado visible */
+.fade-in.show {
+    opacity: 1;
+}
+
+/* Delay opcional para animaciones escalonadas */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }
