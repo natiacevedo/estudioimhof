@@ -82,3 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+  // 5️⃣ Áreas Mobile - abrir/cerrar descripción
+  const areaCards = document.querySelectorAll('#areas .col-12');
+
+  areaCards.forEach(card => {
+    card.addEventListener('click', () => {
+      // cerrar las demás
+      areaCards.forEach(c => {
+        if (c !== card) c.classList.remove('active');
+      });
+      // alternar la clickeada
+      card.classList.toggle('active');
+    });
+  });
