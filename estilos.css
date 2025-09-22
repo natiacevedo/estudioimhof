@@ -118,7 +118,7 @@ header.scrolled {
 /* Hero */
 .hero {
   background: url('img/hero.jpg') center/cover no-repeat;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   text-align: center;
