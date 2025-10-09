@@ -27,11 +27,11 @@
 </head>
 <body id="home">
     <header class="fixed-top" id="inicio">
-        <nav class="navbar navbar-expand-md py-3">
+        <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
             
                 <a class="navbar-brand ms-3" href="index.html">
-                    <img src="img/[Imhof]-Logo3.png" alt="Logo Estudio Imhof" width="180">
+                    <img src="img/[Imhof]-Logo3.png" alt="Logo Estudio Imhof" width="140">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,12 +62,10 @@
     </header>
 
     <main>
-         <section class="hero" id="inicio">
+        <section class="hero" id="inicio">
             <div class="hero-text">
-
                 <div class="hero-center fade-in delay-3">
                     <img src="img/[Imhof]-Logo3.png" alt="Logo Estudio Imhof" class="mb-2">
-                    <h5 class="montserrat">Defendemos tus derechos.<br>Acompañamos tus proyectos.</h5>
                 </div>
 
                 <div class="saber-mas">
@@ -75,7 +73,6 @@
                         Conocer más <i class="fa fa-chevron-down ms-1 px-1"></i>
                     </a>
                 </div>
-
             </div>
         </section>
 
@@ -95,124 +92,446 @@
             <p>
             Actuamos con ética, transparencia y dedicación, priorizando siempre la confianza y la
             seguridad jurídica de quienes nos eligen.
-            </p>
-            <a href="equipo.html" class="cta bitter text-decoration-none">Conocé nuestro equipo <i class="ms-1 p-2 fa-solid fa-chevron-right"></i></a>
+        </p>
+        <a href="equipo.html" class="cta bitter text-decoration-none">Conocé nuestro equipo <i class="ms-1 p-2 fa-solid fa-chevron-right"></i></a>
         </section>
 
         <div id="practicas"></div>
-
-        <section class="carousel-section px-3">
-            <button class="carousel-button prev" aria-label="Anterior" type="button"><i class="fa fa-chevron-left p-4"></i></button>
-            <div class="carousel-track container">
-                <div class="card">
-                <h4>Agronegocios</h4>
-                <p>Asesoramiento integral en el sector agroindustrial, incluyendo contratos, financiamiento, regulaciones y desarrollo de proyectos agrícolas y ganaderos.</p>
-                </div>
-                <div class="card">
-                <h4>Bancario & Financiero</h4>
-                <p>Asistencia en operaciones financieras, cumplimiento normativo, financiamiento corporativo y restructuraciones bancarias.</p>
-                </div>
-                <div class="card">
-                <h4>Derecho Corporativo</h4>
-                <p>Constitución, reorganización y gobierno de sociedades, contratos comerciales y asesoramiento en la gestión societaria.</p>
-                </div>
-                <div class="card">
-                <h4>Derecho del Consumidor</h4>
-                <p>Representación y asesoramiento en relaciones de consumo Defensa de proveedores ante el Area de Denfensa del Consumidor asistencia en procesos administrativos lo que implica contestacion de vistas, recursos, audiencias, negociacion y acuerdos en sede tanto administrativa como judicial.</p>
-                </div>
-                <div class="card">
-                <h4>Derecho de Familia</h4>
-                <p>Asesoramiento en las distintas áreas del derecho de familia como ser procesos de divorcio, acuerdos prenupciales, redacción de convenios de tenencia, visitas y alimentos, así como asesoramiento en materia sucesoria y testamentaria.  
-                    Realización de trámites en sede administrativa y apoyo en materia Notarial.</p>
-                </div>
-                <div class="card">
-                <h4>Derecho Laboral</h4>
-                <p>Asesoría en relaciones laborales, contratos de trabajo, negociación colectiva, despidos y litigios laborales.</p>
-                </div>
-                <div class="card">
-                <h4>Derecho Civil</h4>
-                <p>Asesoramiento y redacción de contratos en materia civil, orientando a nuestros clientes tanto en sus relaciones patrimoniales y personales como en lo relativo a obligaciones y responsabilidad civil contractual y extracontractual.
-                    Brindamos asistencia tecnica en materia patrimonial y extrapatrimonial relativa a bienes muebles e inmuebles. Representamos a nuestros clientes tanto en instancias de conciliación como en sede judicial.</p>
-                </div>
-                <div class="card">
-                <h4>Fusiones & Adquisiciones</h4>
-                <p>Asistencia en procesos de compra, venta y fusión de empresas, incluyendo due diligence y estructuración de operaciones.</p>
-                </div>
-                <div class="card">
-                <h4>Litigios</h4>
-                <p>Asesoramiento y representación judicial en las distintas áreas del Derecho.</p>
-                </div>
-                <div class="card">
-                <h4>Notarial</h4>
-                <p>Redacción y formalización de escrituras públicas, Cartas Poder, actas notariales, estudio de títulos, elaboración de certificados notariales, inscripción en los Registros Correspondientes, protocolización de documentos,  entre  otros actos jurídicos que requieren  de intervención notarial.</p>
+    
+        <section class="areas-practica pb-5" id="areas-desktop">
+            <div class="container text-center">
+                <h4 class="italic mb-4">Áreas de Práctica</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalAgronegocios">Agronegocios</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalBancario">Bancario & Financiero</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalCorporativo">Derecho Corporativo</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalConsumidor">Derecho del Consumidor</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalFamilia">Derecho de Familia</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalLaboral">Derecho Laboral</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalCivil">Derecho Civil</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalFusiones">Fusiones & Adquisiciones</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalLitigios">Litigios</button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNotarial">Notarial</button>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-button next" aria-label="Siguiente" type="button"><i class="fa fa-chevron-right"></i></button>
         </section>
+        
+        <!-- =======================
+        MODALES
+        ======================== -->
+        
+        <!-- Agronegocios -->
+        <div class="modal fade" id="modalAgronegocios" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Agronegocios</h4>
+                                <p>Asesoramiento integral en el sector agroindustrial, incluyendo contratos, financiamiento, regulaciones y desarrollo de proyectos agrícolas y ganaderos.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/agronegocios2.jpg" alt="Agronegocios" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalNotarial">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalBancario">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bancario & Financiero -->
+        <div class="modal fade" id="modalBancario" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Bancario & Financiero</h4>
+                                <p>Asistencia en operaciones financieras, cumplimiento normativo, financiamiento corporativo y restructuraciones bancarias.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/bancario2.jpg" alt="Bancario & Financiero" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalAgronegocios">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalCorporativo">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Derecho Corporativo -->
+        <div class="modal fade" id="modalCorporativo" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Derecho Corporativo</h4>
+                                <p>Constitución, reorganización y gobierno de sociedades, contratos comerciales y asesoramiento en la gestión societaria.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/corporativo2.jpg" alt="Derecho Corporativo" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalBancario">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalConsumidor">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Derecho del Consumidor -->
+        <div class="modal fade" id="modalConsumidor" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Derecho del Consumidor</h4>
+                                <p>Representación y asesoramiento en relaciones de consumo. Defensa de proveedores ante el Área de Defensa del Consumidor y asistencia en procesos administrativos, lo que implica contestación de vistas, recursos, audiencias, negociación y acuerdos en sede tanto administrativa como judicial.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/consumo2.jpg" alt="Derecho del Consumidor" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalCorporativo">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalFamilia">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Derecho de Familia -->
+        <div class="modal fade" id="modalFamilia" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Derecho de Familia</h4>
+                                <p>Asesoramiento en las distintas áreas del derecho de familia como procesos de divorcio, acuerdos prenupciales, convenios de tenencia, visitas y alimentos, así como asesoramiento en materia sucesoria y testamentaria. Realización de trámites administrativos y apoyo notarial.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/familia2.jpg" alt="Derecho de Familia" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalConsumidor">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalLaboral">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Derecho Laboral -->
+        <div class="modal fade" id="modalLaboral" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Derecho Laboral</h4>
+                                <p>Asesoría en relaciones laborales, contratos de trabajo, negociación colectiva, despidos y litigios laborales.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/laboral2.jpg" alt="Derecho Laboral" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalFamilia">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalCivil">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Derecho Civil -->
+        <div class="modal fade" id="modalCivil" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Derecho Civil</h4>
+                                <p>Asesoramiento y redacción de contratos en materia civil, tanto en relaciones patrimoniales como personales. Representación en conciliaciones y juicios sobre obligaciones, responsabilidad civil y bienes muebles e inmuebles.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/civil2.jpg" alt="Derecho Civil" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalLaboral">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalFusiones">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fusiones & Adquisiciones -->
+        <div class="modal fade" id="modalFusiones" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Fusiones & Adquisiciones</h4>
+                                <p>Asistencia en procesos de compra, venta y fusión de empresas, incluyendo due diligence y estructuración de operaciones.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/fusiones2.jpg" alt="Fusiones & Adquisiciones" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalCivil">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalLitigios">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Litigios -->
+        <div class="modal fade" id="modalLitigios" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4">
+
+                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+                    <div class="modal-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 text-start">
+                                <h4 class="mb-3">Litigios</h4>
+                                <p>Asesoramiento y representación judicial en las distintas áreas del Derecho.</p>
+                            </div>
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="img/litigios2.jpg" alt="Litigios" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button class="btn btn-outline-secondary prev-modal" data-prev="#modalFusiones">←</button>
+                        <button class="btn btn-outline-secondary next-modal" data-next="#modalNotarial">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notarial -->
+        <div class="modal fade" id="modalNotarial" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4">
+
+            <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+            <div class="modal-body p-4">
+                <div class="row align-items-center">
+                <div class="col-md-7 text-start">
+                    <h4 class="mb-3">Notarial</h4>
+                    <p>Redacción y formalización de escrituras públicas, Cartas Poder, actas notariales, estudio de títulos, elaboración de certificados notariales, inscripción en los Registros Correspondientes, protocolización de documentos, entre otros actos jurídicos que requieren intervención notarial.</p>
+                </div>
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="img/notarial2.jpg" alt="Notarial" class="img-fluid rounded-3">
+                </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn btn-outline-secondary prev-modal" data-prev="#modalLitigios">←</button>
+                    <button class="btn btn-outline-secondary next-modal" data-next="#modalFamilia">→</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+
 
         <!-- Áreas -->
         <section class="areas" id="areas">
             <div class="row">
-                <div class="uno col-12 col-md-6 col-lg-3">
+                <div class="uno col-12 col-md-6">
                     <div class="texto">
                         <h4>Agronegocios</h4>
                         <p>Asesoramiento integral en el sector agroindustrial, incluyendo contratos, financiamiento, regulaciones y desarrollo de proyectos agrícolas y ganaderos.</p>
                     </div>
                 </div>
-                <div class="dos col-12 col-md-6 col-lg-3">
+                <div class="dos col-12 col-md-6">
                     <div class="texto">
                         <h4>Bancario & Financiero</h4>
                         <p>Asistencia en operaciones financieras, cumplimiento normativo, financiamiento corporativo y restructuraciones bancarias.</p>
                     </div>
                 </div>
-                <div class="tres col-12 col-md-6 col-lg-3">
+                <div class="tres col-12 col-md-6">
                     <div class="texto">
                         <h4>Derecho Corporativo</h4>
                         <p>Constitución, reorganización y gobierno de sociedades, contratos comerciales y asesoramiento en la gestión societaria.</p>
                     </div>
                 </div>
-                <div class="cuatro col-12 col-md-6 col-lg-3">
+                <div class="cuatro col-12 col-md-6">
                     <div class="texto">
                         <h4>Derecho del Consumidor</h4>
                         <p>Representación y asesoramiento en relaciones de consumo, Defensa de proveedores ante el Area de Denfensa del Consumidor, asistencia en procesos administrativos lo que implica contestacion de vistas, recursos, audiencias, negociacion y acuerdos en sede tanto administrativa como judicial.</p>
                     </div>
                 </div>
-                <div class="cinco col-12 col-md-6 col-lg-3">
+                <div class="cinco col-12 col-md-6">
                     <div class="texto">
                         <h4>Derecho de Familia</h4>
                         <p>Asesoramiento en las distintas áreas del derecho de familia como ser procesos de divorcio, acuerdos prenupciales, redacción de convenios de tenencia, visitas y alimentos, así como asesoramiento en materia sucesoria y testamentaria.  
                         Realización de trámites en sede administrativa y apoyo en materia Notarial.</p>
                     </div>
                 </div>
-                <div class="seis col-12 col-md-6 col-lg-3">
+                <div class="seis col-12 col-md-6">
                     <div class="texto">
                         <h4>Derecho Laboral</h4>
                         <p>Asesoría en relaciones laborales, contratos de trabajo, negociación colectiva, despidos y litigios laborales.</p>
                     </div>
                 </div>
-                <div class="siete col-12 col-md-6 col-lg-3">
+                <div class="siete col-12 col-md-6">
                     <div class="texto">
                         <h4>Derecho Civil</h4>
                         <p>Asesoramiento y redacción de contratos en materia civil, orientando a nuestros clientes tanto en sus relaciones patrimoniales y personales como en lo relativo a obligaciones y responsabilidad civil contractual y extracontractual.
                         Brindamos asistencia tecnica en materia patrimonial y extrapatrimonial relativa a bienes muebles e inmuebles. Representamos a nuestros clientes tanto en instancias de conciliación como en sede judicial.</p>
                     </div>
                 </div>
-                <div class="ocho col-12 col-md-6 col-lg-3">
+                <div class="ocho col-12 col-md-6">
                     <div class="texto">
                         <h4>Fusiones & Adquisiciones</h4>
                         <p>Asistencia en procesos de compra, venta y fusión de empresas, incluyendo due diligence y estructuración de operaciones.</p>
                     </div>
                 </div>
-                <div class="nueve col-12 col-md-6 col-lg-3">
+                <div class="nueve col-12 col-md-6">
                     <div class="texto">
                         <h4>Litigios</h4>
                         <p>Asesoramiento y representación judicial en las distintas áreas del Derecho.</p>
                     </div>
                 </div>
-                <div class="diez col-12 col-md-6 col-lg-3">
+                <div class="diez col-12 col-md-6">
                     <div class="texto">
                         <h4>Notarial</h4>
                         <p>Redacción y formalización de escrituras públicas, Cartas Poder, actas notariales, estudio de títulos, elaboración de certificados notariales, inscripción en los Registros Correspondientes, protocolización de documentos,  entre  otros actos jurídicos que requieren  de intervención notarial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientes pt-5">
+            <div class="container text-center">
+                <h4 class="italic mb-2">Confiaron en nosotros:</h4>
+                <div class="clientes-logos">
+                    <div class="row flex-wrap justify-content-between align-items-center">
+                        <div class="col-4">
+                            <a href="https://www.toctocviajes.com/" target="_blank">
+                                <img src="img/logos/toctoc.png" alt="TocToc Viajes" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <a href="https://jetmar.com.uy/" target="_blank">
+                                <img src="img/logos/jetmar.png" alt="jetmar" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <a href="https://www.tiendaviajes.com.uy/" target="_blank">
+                                <img src="img/logos/tiendaviajes.png" alt="Tienda Viajes" class="img-fluid logo-cliente logo-tienda">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <a href="https://netviax.com/" target="_blank">
+                                <img src="img/logos/netviax.png" alt="Netviax" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <a href="https://www.buemes.com.uy/" target="_blank">
+                                <img src="img/logos/buemes.png" alt="Buemes" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <a href="https://voy.com.uy/" target="_blank">
+                                <img src="img/logos/voy.png" alt="Voy" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <a href="https://www.guamatur.com/paquetes" target="_blank">
+                                <img src="img/logos/guamatur.png" alt="Guamatur" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <a href="https://eramio.com.uy/" target="_blank">    
+                                <img src="img/logos/eramio.png" alt="Era Mio" class="img-fluid logo-cliente">
+                            </a>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <a href="https://turisport.com.uy/" target="_blank">
+                                <img src="img/logos/turisport.png" alt="Tienda Viajes" class="img-fluid logo-cliente logo-tienda">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,15 +560,20 @@
 
     <footer>
         <div class="container text-center py-3">
-            <div class="footer-row">
-            <img src="img/[Imhof]-Logo3.png" alt="Logo Estudio Imhof" width="180">
-            <div class="text-left">
-                <p class="smaller">
-                Tel. +598 2 708 4013 <br>
-                Luis B. Cavia 3071 of. 904<br>
-                Montevideo, Uruguay.
-                </p>
-            </div>
+            <div class="footer-row mb-3">
+                <a href="index.html">
+                    <img src="img/[Imhof]-Logo3.png" alt="Logo Estudio Imhof" width="180">
+                </a>
+                <div class="text-left">
+                    <p class="smaller mb-1">
+                    Tel. +598 2 708 4013 <br>
+                    Luis B. Cavia 3071 of. 904<br>
+                    Montevideo, Uruguay.
+                    </p>
+                    <a href="https://www.linkedin.com/company/estudio-imhof/about/" target="_blank" class="text-decoration-none text-white">
+                        <i class="fa-brands fa-linkedin fa-lg"></i>
+                    </a>
+                </div>
             </div>
             <p class="smaller">© 2025 Desarrollado por Natalia Acevedo.</p>
         </div>

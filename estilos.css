@@ -19,6 +19,7 @@ html{
 
 main{
     background-image: url(img/textura.png);
+    background-color: var(--blanco);
     background-repeat: repeat;
     background-size: auto;
 }
@@ -193,7 +194,7 @@ header.scrolled {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #areas {
     display: block;
   }
@@ -346,7 +347,7 @@ header.scrolled {
 }
 
 /* Áreas Desktop */
-.carousel-section {
+/* .carousel-section {
   position: relative;
   margin: 60px 30px;
 }
@@ -364,13 +365,11 @@ header.scrolled {
 }
 
 #home .card {
-  flex: 0 0 400px; /* ancho fijo */
+  flex: 0 0 400px;
   border-radius: 10px;
   padding: 20px;
   color: var(--blanco);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-  /* 🔽 centrado vertical */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -416,13 +415,118 @@ header.scrolled {
   cursor: grabbing;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .carousel-section {
+    display: none;
+  }
+} */
+
+/* ÁREAS NUEVO */
+
+.areas-practica {
+  text-align: center;
+}
+
+.areas-practica .row {
+  row-gap: 5px !important;
+  justify-content: center;
+}
+
+.areas-practica .btn-area {
+  font-family: "Bitter", serif;
+  color: var(--bordo);
+  border: 1px solid var(--bordo);
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.areas-practica .btn-area:hover {
+  background-color: var(--bordo);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
+/* ===== Modales ===== */
+
+.modal-content {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+}
+
+.modal-body h4 {
+  color: var(--bordo);
+  font-weight: 500;
+}
+
+.modal-body p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: var(--negro);
+}
+
+.modal-body img {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  #areas-desktop {
     display: none;
   }
 }
 
+/* Clientes */
+
+.logo-cliente {
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.logo-cliente:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.clientes-logos {
+  width: 70%;
+  margin: auto;
+}
+
+.clientes-logos div {
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .clientes-logos {
+    width: 100%;
+  }
+
+  .logo-cliente {
+    filter: none;
+    opacity: 1;
+  }
+
+  .logo-cliente:hover {
+    filter: none;
+    opacity: 1;
+  }
+
+  .logo-tienda {
+    content: url(img/logos/tiendaviajes.mobile.png);
+  }
+}
+
 /* Contacto */
+
 form {
   max-width: 800px;
   margin: auto;
@@ -482,6 +586,22 @@ footer .footer-row {
   text-align: left;
 }
 
+/* Trabaja con nosotoros */
+
+#aplicacion {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+
 /* Mobile */
 
 @media (max-width: 991px) {
@@ -539,6 +659,25 @@ footer .footer-row {
 
 .card{
     border: none;
+}
+
+.card-text {
+  max-height: 120px;   /* altura inicial (ajustala) */
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+
+.card-text.expanded {
+  max-height: 2000px; /* un valor alto para mostrar todo */
+}
+
+.leer-mas {
+  color: var(--bordo);
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 @media (max-width: 991px) {

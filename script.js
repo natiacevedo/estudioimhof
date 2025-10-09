@@ -96,3 +96,42 @@ document.addEventListener('DOMContentLoaded', () => {
       card.classList.toggle('active');
     });
   });
+
+  // Leer más
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const botones = document.querySelectorAll('.leer-mas');
+
+  botones.forEach(boton => {
+    boton.addEventListener('click', () => {
+      const texto = boton.previousElementSibling;
+
+      texto.classList.toggle('expanded');
+
+      if (texto.classList.contains('expanded')) {
+        boton.textContent = 'Leer menos';
+      } else {
+        boton.textContent = 'Leer más';
+      }
+    });
+  });
+});
+
+/* Modeles */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modals = document.querySelectorAll(".modal");
+
+  modals.forEach(modal => {
+    modal.addEventListener("click", function(e) {
+      if (e.target.classList.contains("next-modal") || e.target.classList.contains("prev-modal")) {
+        const currentModal = bootstrap.Modal.getInstance(modal);
+        currentModal.hide();
+
+        const targetId = e.target.dataset.next || e.target.dataset.prev;
+        const targetModal = new bootstrap.Modal(document.querySelector(targetId));
+        targetModal.show();
+      }
+    });
+  });
+});
